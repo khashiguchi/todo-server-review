@@ -15,7 +15,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'mysql2', '>= 0.4.4','<0.6.0'
+  gem 'mysql2', '>= 0.4.4','< 0.6.0'
   gem 'rspec-rails'
 end
 
