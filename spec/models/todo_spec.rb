@@ -32,7 +32,7 @@ RSpec.describe Todo, type: :model do
   end
 
   describe 'detail' do
-    context 'has 1000characters' do
+    context 'has 1000 characters' do
       before { @todo.detail = 'a' * 1000 }
       it 'is valid' do
         expect(@todo).to be_valid
