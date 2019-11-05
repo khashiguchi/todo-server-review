@@ -7,11 +7,11 @@ RSpec.describe Todo, type: :model do
   end
 
   describe "title" do
-    it "is presence" do
+    it "is present" do
       expect(@todo).to be_valid
     end
 
-    it "is not presence" do
+    it "is not present" do
       @todo.title= ""
       expect(@todo).to be_invalid
     end
