@@ -10,21 +10,21 @@ RSpec.describe Todo, type: :model do
     end
 
     context "is not present," do
-      before{@todo.title= ""}
+      before { @todo.title= "" }
       it "is invalid" do
         expect(@todo).to be_invalid
       end
     end
 
     context "has 100 characters," do
-      before{@todo.title = "a" * 100}
+      before { @todo.title = "a" * 100 }
       it "is valid" do
         expect(@todo).to be_valid
       end
     end
 
     context "has 101 characters," do
-      before{@todo.title= "a" * 101}
+      before { @todo.title= "a" * 101 }
       it "is invalid" do
         expect(@todo).to be_invalid
       end
