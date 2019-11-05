@@ -17,7 +17,7 @@ RSpec.describe Todo, type: :model do
         expect(@todo).to be_invalid
       end
     end
-    
+
     context "has 100 characters," do
       before{@todo.title = "a" * 100}
       it "is valid" do
