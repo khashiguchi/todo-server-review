@@ -2,9 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Todo, type: :model do
 
-  before(:each) do
-    @todo = create(:todo)
-  end
+  before(:each) { @todo = create(:todo) }
 
   describe "title" do
     it "is valid" do
@@ -48,5 +46,4 @@ RSpec.describe Todo, type: :model do
       end
     end
   end
-
 end
