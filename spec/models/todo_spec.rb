@@ -2,10 +2,8 @@ require 'rails_helper'
 
 RSpec.describe Todo, type: :model do
 
-  before do
-    @todo = Todo.new(title: "sample",
-                     detail: "a" * 900,
-                     date: "20191111")
+  before(:each) do
+    @todo = create(:todo)
   end
 
   describe "title" do
